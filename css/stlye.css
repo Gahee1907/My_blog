@@ -1,0 +1,149 @@
+/* header */
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 80px;
+}
+.header__name {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 70px;
+}
+.header__logo {
+    width: 40px; height: 40px;
+    background-color: tomato;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.header__name h1 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.header__menu {
+    display: flex;
+    margin-left: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+.header__menu li {
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+.header__menu li a:hover {
+    color: rgb(183, 183, 183);
+    transition: 0.5s ease;
+}
+/* aside*/
+aside {
+    position: fixed;
+    top: 0; left: 70px;
+    z-index: 10;
+}
+.aside__wrapper {
+    min-width: 200px;  
+    height: 100vh; 
+    padding: 90px 0 0 0;
+    text-align: center;
+}
+.aside__profile {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.aside__profile h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: tomato;
+    margin: 11px 0;
+}
+.aside__profile p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.aside__image {
+    width: 150px; height: 150px;
+    margin: 0 auto;
+    background-color: tomato;
+    border-radius: 50%;
+}
+.aside__x {
+    height: 180px;
+    border-bottom: 1px solid black;
+    background-color: tomato;
+}
+.aside__email {
+    margin-top: 20px;
+}
+.aside__email li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 238, 238);
+    margin: 6px 0;
+    padding-right: 6px;
+    border-radius: 4px;
+}
+.aside__email li:hover {
+    background-color: tomato;
+}
+.aside__icon {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+}
+.aside__text {
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: none;
+}
+.aside__text:hover {
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .aside {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 0; right: 80px;
+}
+.nav__wrapper {
+    padding-top: 90px;
+}
+.nav__name {
+    min-width: 200px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.nav__list {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.nav__list li {
+    background-color: rgb(240, 238, 238);
+    margin: 10px 0;
+    padding: 6px 10px;
+    text-align: left;
+}
