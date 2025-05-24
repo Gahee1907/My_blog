@@ -1,149 +1,275 @@
 /* header */
-.header {
-    position: fixed;
-    top: 0; left: 0;
+header {
     width: 100%;
-    background-color: #fff;
-    z-index: 20;
-}
-.header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    height: 80px;
-}
-.header__name {
-    display: flex;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 70px;
-}
-.header__logo {
-    width: 40px; height: 40px;
-    background-color: tomato;
-    border-radius: 50%;
-    margin-right: 7px;
-}
-.header__name h1 {
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-.header__menu {
-    display: flex;
-    margin-left: 50px;
-    height: 40px;
-    line-height: 40px;
-}
-.header__menu li {
-    padding: 0 20px;
-    font-size: 1.2rem;
-}
-.header__menu li a:hover {
-    color: rgb(183, 183, 183);
-    transition: 0.5s ease;
-}
-/* aside*/
-aside {
+    height: 90px;
+    padding: 0 60px;
     position: fixed;
-    top: 0; left: 70px;
-    z-index: 10;
-}
-.aside__wrapper {
-    min-width: 200px;  
-    height: 100vh; 
-    padding: 90px 0 0 0;
-    text-align: center;
-}
-.aside__profile {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-.aside__profile h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: tomato;
-    margin: 11px 0;
-}
-.aside__profile p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-.aside__image {
-    width: 150px; height: 150px;
-    margin: 0 auto;
-    background-color: tomato;
-    border-radius: 50%;
-}
-.aside__x {
-    height: 180px;
-    border-bottom: 1px solid black;
-    background-color: tomato;
-}
-.aside__email {
-    margin-top: 20px;
-}
-.aside__email li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(240, 238, 238);
-    margin: 6px 0;
-    padding-right: 6px;
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 50;
 }
-.aside__email li:hover {
-    background-color: tomato;
+header .header-name h1{
+    font-size: 1.5rem;
 }
-.aside__icon {
-    font-size: 1rem;
-    background-color: transparent;
-    border: none;
+header .header-menu {
+    display: flex;
 }
-.aside__text {
-    font-size: 0.8rem;
-    background-color: transparent;
-    border: none;
-}
-.aside__text:hover {
-    color: white;
-}
-@media screen and (max-width: 1200px) {
-    .aside {
-        display: none;
-    }
-    .nav {
-        display: none;
-    }
-}
-@media screen and (max-width: 800px) {
-    .header__menu {
-        display: none;
-    }
+header .header-menu li {
+    padding: 0 20px;
+    font-size: 1.1rem;
 }
 
-.nav {
+/* header-mobile */
+.header-mobile {
+    display: none;
+}
+html.open {
+    overflow: hidden;
+  }
+  
+#menu.open {
+    left: 0px;
+}
+.page_cover.open {
+    display: block;
+}
+.btn {
+    font-size: 2.8rem;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+#menu .close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+} 
+#menu {   
+    width: 200px;
+    height: 100%;
     position: fixed;
-    top: 0; right: 80px;
+    top: 0px;
+    left: -202px;
+    z-index: 20;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 40px;
+} 
+#menu a{
+   padding:0;
+   text-decoration: none;
+   font-size: 18px;
+   color: black;
+   display: block;
+   transition: 0.3s;
 }
-.nav__wrapper {
-    padding-top: 90px;
+#menu.open {
+    left: 0px;
 }
-.nav__name {
-    min-width: 200px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 20px;
+.page_cover.open {
+    display: block;
+}
+.page_cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    display: none;
+}
+ #menu ul { 
+    width: 198px; 
+    margin:0; 
+    padding:0;
+}    
+#menu ul.nav li {
+    position:relative; 
+    float:left; 
+    width:100%; 
+    list-style-type:none; 
+    font-size:18px;
+}     
+#menu ul.nav li a {
+    display:block; 
+    width:100%; 
+    height:100%; 
+    line-height:50px; 
+    text-indent:20px;
+    text-align: left;
+    color:black; 
+    font-weight:bold; 
+    text-decoration:none;
+}      
+#menu ul.nav li a:hover {
+    background:#eee;
+}
+      
+#menu ul.nav li .sub_mobile a {
+    position:relative;
+    float:left;
+    display:block;
+    width:100%;
+    z-index:999;
+    background:#ccc;
+} 
+#menu ul.nav li .sub_mobile a:hover {
+      background:#ffb700;
+      color:#fff;
+      z-index:999;
+}
+
+/* visual */
+.visual-wrap {
+    padding: 8vw;
+    height: 100vh;
+    background-image: url(https://gahee1907.github.io/Web_gahee/img/welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.visual-wrap .text {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 200px 0 40px 0;
+}
+.visual-wrap p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.char {
+    display: inline-block;
+  }
+
+
+.flow-wrap {
+    padding: 50px 0;
+}
+.flow-text {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 2.3rem;
+    font-weight:bold;
+    color: #9D9993;
+}
+.flow-text:hover {
+  color: #000;
+}
+.flow-text:hover span {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+span {
+  animation: textLoop 10s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+.about-me {
+    width: 100%;
+    padding: 0 8vw;
+}
+.about-me h1 {
+    font-size: 2.8rem;
+}
+.about-me .about-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 35px 0;
+}
+.about-me .about-wrap img {
+    width: 35%;
+    height: 35%;
+}
+.about-me .about-wrap .about-text {
+    margin-left: 60px;
+}
+.about-me .about-wrap .about-text h2 {
+  font-family: "League Script", cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #5b7eff;
+  margin-bottom: 15px;
+}
+.about-me .about-wrap .about-text p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+.about-me .about-wrap .about-text p:nth-child(6) {
+    margin-bottom: 40px;
+}
+.about-me .about-wrap .about-text a {
+    color:#5b7eff;
+    transition: .4s all ease-in-out;
+}
+.about-me .about-wrap .about-text a:hover {
+    color:#a1b4f8
+}
+
+footer {
+    width: 100%;
+    padding: 40px;
+}
+footer p {
+    color: #d6d5d5;
+    font-size: 1rem;
     text-align: center;
 }
-.nav__list {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
+  @keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  } 
+
+@media screen and (max-width: 1200px) {
+
 }
-.nav__list li {
-    background-color: rgb(240, 238, 238);
-    margin: 10px 0;
-    padding: 6px 10px;
-    text-align: left;
+@media screen and (max-width: 800px) {
+    .header-menu {
+        display: none;
+    }
+    .header-mobile {
+        display: block;
+        z-index: 50;
+    }
+    .about-me .about-wrap {
+        display: block;
+    }
+    .about-me .about-wrap img {
+        margin: 0 auto;
+    }
+    .about-me .about-wrap .about-text {
+        margin-left: 0;
+    }
+    .about-me .about-wrap .about-text p {
+        font-size: 0.9rem;
+    }
 }

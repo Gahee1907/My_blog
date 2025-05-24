@@ -1,0 +1,46 @@
+main {
+    padding: 100px 50px 0;
+}
+main .note__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+main .note__wrapper .note {
+    display: flex;
+    padding: 10px;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+main .note__wrapper .note .img__wrapper {
+    padding: 6px;
+    margin-right: 6px;
+}
+main .note__wrapper .note .img__wrapper img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: inline-block;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+main .note__wrapper .note .img__wrapper img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+main .note__wrapper .note .content__wrapper {
+    margin-left: 10px;
+}
+main .note__wrapper .note .content__wrapper h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+main .note__wrapper .note .content__wrapper p {
+    font-size: 0.9rem;
+    word-break: keep-all;
+    margin-top: 5px;
+}
+

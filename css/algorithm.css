@@ -1,0 +1,73 @@
+main {
+    padding: 100px 100px 0;
+    background-image: url(https://gahee1907.github.io/Web_gahee/img/welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main article {
+    height: 350px;
+    position: relative;
+}
+main article h1 {
+    font-size: 1.3rem;
+    font-weight: bold;  
+    margin: 20px 0 20px 20px;
+
+}
+.swiper {
+  width: 90%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.swiper-slide {
+    width: 100px;
+    text-align: center;
+    font-size: 18px; 
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background-image: url(https://blog.kakaocdn.net/dn/lRrZk/btqESXkLOOj/DrKixxsaxqbdpixXCOFDF0/img.png);
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide:hover {
+    background-color: rgba(128, 128, 128, 0.47);
+}
+
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+}
+.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+}
+
+.graph-wrap {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        padding: 25vw 2vw;
+    }
+    main article h1 {
+        margin: 10px 5px;
+    }
+}

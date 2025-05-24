@@ -1,0 +1,55 @@
+main {
+  padding-top: 100px;
+  padding-bottom: 50px; 
+  overflow: hidden;
+  background-image: url(https://gahee1907.github.io/Web_gahee/img/welcome.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+}
+main .title-wrap {
+  width: 100%;
+}
+main .title-wrap h1 {
+  font-size: 3rem;
+  margin: 20px 0 0 85px;
+}
+main .item {
+  width: 100%;
+  height: 60vh;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+main .item .img-wrap {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+}
+main .item .img-wrap img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+main .item img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+main .item .item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 20px;
+}
+main .item .item-text h2 {
+  font-size: 2.3rem;
+}
+main .item .item-text p {
+  font-size: 1.2rem;
+  word-break: keep-all;
+  color:rgb(105, 104, 104);
+}

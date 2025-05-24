@@ -3,52 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테그노트 | 가희의 웹 블로그</title>
+    <title>테크노트 | 가희의 웹 블로그</title>
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/stlye.css" rel="stylesheet">
     <link href="../css/note.css" rel="stylesheet">
 
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- gsap -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     
+    <!-- js -->
+    <script defer src="/js/main.js"></script>
+
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="header__name">
-                <div class="header__logo"></div>
-                <h1><a href="/index.html">가희의 웹 블로그</a></h1>
-            </div>
-            <ul class="header__menu">
-                <li><a href="#">프로필</a></li>
-                <li><a href="#" class="header__active">테크노트</a></li>
-                <li><a href="#">프로젝트</a></li>
-                <li><a href="#">프로젝트</a></li>
-            </ul>
+    <header>
+        <!-- header -->
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Portfolio</a> </h1>
         </div>
+        <ul class="header-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="note.html">TechNote</a></li>
+            <li><a href="./algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="#">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="./algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="#">수학</a></li>
+                            <li><a href="#">구현</a></li>
+                            <li><a href="#">다이나믹 프로그래밍</a></li>
+                            <li><a href="#">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
     </header>
+    <main>
+        <ul class="note__wrapper">
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://libreriasjs.com/wp-content/uploads/2023/10/logo_swiper-1.png" alt="스와이퍼 로고 이미지">
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="content__wrapper">
+                        <h1>Swiper</h1>
+                        <p>웹사이트나 앱에서 슬라이드 같은 뷰를 쉽게 구성할 수 있는 오픈소스 라이브러리</p>
+                    </div>
+                </a>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://images.prismic.io/toyfight/65e1e07d27237c2bb829b9dc_GSAP-Meta-image.jpg?auto=format%2Ccompress&rect=0%2C0%2C2400%2C1260&w=2400&h=1260" alt="자삽 로고 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>GSAP</h1>
+                    <p>The GreenSock Animation Platform </p>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://velog.velcdn.com/images/jinseob102/post/62644be5-c3de-4c1c-84c6-bf95806651ec/image.webp" alt="제이쿼리 로고 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>jQuery</h1>
+                    <p> 웹 페이지의 html을 쉽고 간편하게 조작할 수 있도록 돕는 자바스크립트 라이브러리</p>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://prodima.vn/wp-content/uploads/2023/10/bootstrap-la-gi-trong-website-hieu-ro-bootstrap-chi-trong-5p.jpg" alt="부트스트랩 로고 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>Bootstrap</h1>
+                    <p>웹사이트를 쉽게 만들 수 있게 도와주는 CSS, JS 프레임워크</p>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://velog.velcdn.com/images/whtmdgn1409/post/615efb05-01e2-400b-837f-4ebc41a4a0a8/image.jfif" alt="에이오에스 로고 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>AOS</h1>
+                    <p>Animate On Scroll library</p>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://source.inblog.dev/featured_image/2023-09-25T03:40:36.066Z-662c7f92-b22e-4592-82ed-335a5ec5d3d8" alt="깃 로고 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>브랜치 용어 정리</h1>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfM_WiBhzxZavhocj6YsmtC__V3RnhceoqieUCv9ZeFR6yrECU6-NQ8y4ZStyzczFyHQ&usqp=CAU" alt="시맨틱 마크업 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>시맨틱 마크업</h1>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://blog.kakaocdn.net/dn/byc3wo/btrTk3bcgU6/5mdQtbO5UWddZeElqFnP20/img.png" alt="웹 표준성 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>웹 표준성</h1>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://images.samsung.com/kdp/sustainability/accessibility/web-accessibility/sustainability_accessibility_web-accessibility_feature-benefit02_mo_720x752.jpg?$FB_TYPE_B_JPG$" alt="웹 접근성 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>웹 접근성</h1>
+                </div>
+            </li>
+            <li class="note">
+                <div class="img__wrapper">
+                    <a href="#">
+                        <img src="https://images.velog.io/images/offdutybyblo/post/78331290-dec4-439c-a548-148da7c581a3/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9.jpg" alt="반응형 웹에 대한 이미지">
+                    </a>
+                </div>
+                <div class="content__wrapper">
+                    <h1>반응형 웹</h1>
+                </div>
+            </li>
+        </ul>
+    </main>
 
-    <aside class="aside">
-        <div class="aside__wrapper">
-            <div class="aside__profile">
-                <div class="aside__image"></div>
-                <h1>rkgml1907</h1>
-                <p>이가희</p>
-            </div>
-            <div class="aside__x"></div>
-            <ul class="aside__email">
-                <li>
-                    <button class="aside__icon">&#128231;</button>
-                    <button class="aside__text">rkgml1907@naver.com</button>
-                </li>
-                <li>
-                    <button class="aside__icon">&#128231;</button>
-                    <button class="aside__text">rkgml10079@gmail.com</button>
-                </li>
-                <li>
-                    <button class="aside__icon">&#128222;</button>
-                    <button class="aside__text">010-3901-9410</button>
-                </li>
-            </ul>
-        </div>
-    </aside>
-    
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+
 </body>
 </html>
