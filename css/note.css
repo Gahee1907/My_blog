@@ -1,5 +1,5 @@
 main {
-    padding: 100px 50px 0;
+    padding: 110px 50px 0;
 }
 main .note__wrapper {
     display: grid;
@@ -18,8 +18,8 @@ main .note__wrapper .note .img__wrapper {
     margin-right: 6px;
 }
 main .note__wrapper .note .img__wrapper img{
-    width: 150px;
-    height: 150px;
+    width: 13vw;
+    height: 13vw;
     overflow: hidden;
     display: inline-block;
     object-fit: cover;
@@ -44,3 +44,10 @@ main .note__wrapper .note .content__wrapper p {
     margin-top: 5px;
 }
 
+@media screen and (max-width: 800px) {
+  main .note__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  
+}

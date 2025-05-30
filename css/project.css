@@ -1,3 +1,7 @@
+  body, html {
+    font-size: 16px ;
+  }
+
 main {
   padding-top: 100px;
   padding-bottom: 50px; 
@@ -11,18 +15,19 @@ main .title-wrap {
 }
 main .title-wrap h1 {
   font-size: 3rem;
-  margin: 20px 0 0 85px;
+  text-align: center;
+  margin-top: 30px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 main .item {
   width: 100%;
-  height: 60vh;
   margin: 70px auto;
   display: flex;
   justify-content: center;
-  font-size: 3em;
+  font-size: 3rem;
 }
 main .item .img-wrap {
-  width: 60%;
+  width: 50%;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -47,9 +52,36 @@ main .item .item-text {
 }
 main .item .item-text h2 {
   font-size: 2.3rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 main .item .item-text p {
   font-size: 1.2rem;
   word-break: keep-all;
-  color:rgb(105, 104, 104);
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+@media screen and (max-width: 800px) {
+  main .title-wrap h1 {
+    font-size: 1.5rem;
+  }
+  main .item .item-text h2 {
+    font-size: 1.2rem;
+  }
+  main .item .item-text p {
+    font-size: 0.8rem;
+  }
+
+  main .item .img-wrap {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main .item .item-text h2 {
+    font-size: 1rem;
+  }
+  main .item .item-text p {
+    font-size: 0.5rem;
+  }
 }

@@ -56,7 +56,7 @@ html.open {
 } 
 #menu {   
     width: 200px;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0px;
     left: -202px;
@@ -89,7 +89,7 @@ html.open {
 }
 .page_cover {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -150,44 +150,21 @@ html.open {
     font-size: 5rem;
     font-weight: bolder;
     margin: 200px 0 40px 0;
+    word-break: keep-all;
 }
 .visual-wrap p {
     font-size: 1.2rem;
     font-weight: 200;
+    word-break: keep-all;
 }
 .char {
     display: inline-block;
   }
 
-
-.flow-wrap {
-    padding: 50px 0;
-}
-.flow-text {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: 0.3s;
-    font-size: 2.3rem;
-    font-weight:bold;
-    color: #9D9993;
-}
-.flow-text:hover {
-  color: #000;
-}
-.flow-text:hover span {
-  animation-play-state: paused;
-  cursor: pointer;
-}
-span {
-  animation: textLoop 10s linear infinite;
-  padding-right: 1.4881vw;
-}
-
+  /* aboutme */
 .about-me {
     width: 100%;
-    padding: 0 8vw;
+    padding: 6vh 8vw;
 }
 .about-me h1 {
     font-size: 2.8rem;
@@ -216,7 +193,7 @@ span {
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 20px;
-
+    word-break: keep-all;
 }
 .about-me .about-wrap .about-text p:nth-child(6) {
     margin-bottom: 40px;
@@ -228,7 +205,38 @@ span {
 .about-me .about-wrap .about-text a:hover {
     color:#a1b4f8
 }
-
+/* skill */
+.flow-wrap {
+    padding: 3vh 8vw;
+}
+.flow-wrap h2 {
+    padding: 3vh 8vw;
+    font-size: 2.2rem;
+}
+.flow-text {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.flow-text .skill {
+    width: 220px;
+    height: 220px;
+    padding: 0 50px;
+}
+.flow-text:hover {
+  color: #000;
+}
+.flow-text:hover .skill {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.skill {
+  animation: imgLoop 5s linear infinite;
+  padding-right: 2.4881vw;
+}
+/* footer */
 footer {
     width: 100%;
     padding: 40px;
@@ -238,22 +246,30 @@ footer p {
     font-size: 1rem;
     text-align: center;
 }
-  @keyframes textLoop {
+  @keyframes imgLoop {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
     100% {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
+      -webkit-transform: translate3d(-220%, 0, 0);
+      transform: translate3d(calc(-10000% * 14));
     }
-  } 
+  }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 640px) {
+    .visual-wrap .text {
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 200px 0 40px 0;
+    }
+    .visual-wrap p {
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
 }
 @media screen and (max-width: 800px) {
-    .header-menu {
+    header .header-menu {
         display: none;
     }
     .header-mobile {

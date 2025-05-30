@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//project aos
 AOS.init({
   duration: 2000,
 })
