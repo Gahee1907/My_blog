@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>프로필 | 가희의 웹 블로그</title>
+
+        <!-- css -->
+        <link rel="icon" href="/img/favicon.ico">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+        <link href="/css/profile.css" rel="stylesheet">
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        
+        <!-- js -->
+        <script defer src="/js/main.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <!-- header -->
+            <div class="header-name">
+                 <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+            </div>
+            <ul class="header-menu">
+                <li><a href="javascript:(0);">Profile</a></li>
+                <li><a href="/html/project.html">Project</a></li>
+                <li><a href="/html/note.html">TechNote</a></li>
+                <li><a href="./algorithm.html">Algorithm</a></li>
+            </ul>
+            <!-- header-mobile -->
+            <div class="header-mobile">
+                <div class="btn">&#9776;</div>
+                <div onclick="history.back();" class="page_cover"></div>
+                <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="javascript:void(0);">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <div onclick="history.back();" class="close">&#8569;</div>
+                </div>
+            </div>    
+        </header>
+        
+        <section>
+            <div class="background">
+                <h1 class="text">PROFILE</h1>
+            </div> 
+        </section>
+
+        <main>
+            <div class="main-wrap">
+                <h1>안녕하세요, 이가희 입니다!</h1>
+                <article>
+                    <img src="/img/이가희.jpeg" alt="이가희 이력서 사진">
+                        <ul class="about">
+                            <h2>Personal Information</h2>
+                            <li>이름 | 이가희</li>
+                            <li>생년월일 | 1999.10.07</li>
+                            <li>전화번호 | 010-3901-9410</li>
+                            <li>이메일 | rkgml10079@gmail.com</li>
+                            <li> 깃헙 | <a href="https://github.com/Gahee1907"> gahee-lee.git</a></li>
+                            <li>포트폴리오 | <a href="/html/project.html">gahee-lee.com</a></li>
+                        </ul>
+                </article>
+                <article>
+                    <div class="text-wrap">
+                        <p>
+                            안녕하세요! 신입 웹 퍼블리셔 이가희 입니다 :)<br>
+                        </p>
+                        <p>
+                            웹 퍼블리셔로서 HTML, CSS, JavaScript를 기반으로 웹 표준과 접근성을 고려한 마크업을 구현하고 있습니다.
+                        </p>
+                        <p>
+                            퍼블리싱은 디자인과 개발의 중간다리 역할이기 때문에 갈등 없이 부드러운 협업이 가장 중요하고,<br>
+                            그렇기에 타인의 감정을 잘 읽고 조화로운 관계를 중시하는 저의 배려심 있고 협업에 유연한 성향이 큰 장점이라고 생각합니다.
+                        </p>
+                        <p>
+                            디자이너가 만든 이미지를 컴퓨터가 잘 읽을 수 있도록 번역해 주는 것이 퍼블리셔의 주된 역할입니다.
+                        </p>
+                        <p>
+                            해외 영화를 번역할 때 한국인들이 이해하기 쉽게 로컬라이징을 잘하는 사람이 좋은 번역가인 것처럼,<br>
+                            컴퓨터가 잘 알아들을 수 있게 코딩하는 좋은 퍼블리셔가 되는 것이 목표입니다.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <ul class="about">
+                         <h2>Certificate</h2>
+                        <li>2024.07.12 | 정보처리기사 (필기)</li>
+                        <li>
+                            2021.09.16 | 정보기술자격 ITQ
+                            <ul class="side">
+                                <li>아래 한글 A등급</li>
+                                <li>한글 엑셀 B등급</li>
+                                <li>한글 파워포인트 A등급</li>
+                            </ul>
+                        </li>
+                        <li>2018.01.29 | 2종 보통 운전 면허</li>
+                    </ul>
+                    <ul class="about">
+                        <h2> Education </h2>
+                        <li>re:code - 웹 퍼블리싱과정 수료 (2024.04 ~ 2025.05)</li>
+                        <li>백석대학교 - 멀티미디어학과 (2018.03 ~ 2022.02)</li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="about">
+                         <h2>Skills</h2>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jquery</li>
+                    </ul>
+                    <ul class="about">
+                        <h2> Available Tools</h2>
+                        <li>Visual Studio Code </li>
+                        <li>Git & GitHub </li>
+                    </ul>
+                    <ul class="about">
+                        <h2> Frameworks</h2>
+                        <li>Bootstrap</li>
+                        <li>React </li>
+                    </ul> 
+                </article>
+            </div>
+        </main>
+        <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+        </footer>
+    </body>
+</html>

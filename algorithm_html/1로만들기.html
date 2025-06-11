@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1463번 1로 만들기</title>
+        <link rel="stylesheet" type="text/css" href="/css/gitcode.css">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- js -->
+         <script src="/js/main.js" deger></script>
+    </head>
+</html>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+    
+    <!-- header -->
+    <header>
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="/html/algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <a href="/html/dynamic.html"><img src="/img/back.png"></a><h2>1463번 1로 만들기</h2>
+            <h4>#다이나믹프로그래밍</h4>
+        </div>
+
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><img src="/img/python-logo.png" alt="파이썬 이미지"><br>Python</li>
+        </ul>
+       
+        <div id="tab-1" class="tab-content current">
+            <script src="https://gist.github.com/Gahee1907/9c8cd3fe3fdc4f66635122bc5f2d3510.js"></script>
+        </div>
+
+        <div class="link">
+            <a href="https://www.acmicpc.net/problem/1463"><p>출처: https://www.acmicpc.net/problem/1463</p></a>
+        </div>
+       
+      </div>
+
+      <script>
+        $(document).ready(function(){
+   
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+        
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+        
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+        
+        })
+      </script>
+
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>

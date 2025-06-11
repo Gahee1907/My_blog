@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2702번 초6 수학 | 가희의 웹 블로그 </title>
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/gitcode.css">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+        
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- js -->
+         <script src="/js/main.js" deger></script>
+    </head>
+</html>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+
+    <!-- header -->
+    <header>
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                 <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="/html/algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+
+
+    <div class="container">
+        <div class="title">
+            <a href="/html/math.html"><img src="/img/back.png"></a><h2>2702번 초6 수학</h2>
+            <h4>#수학 #브루트포스 알고리즘 #정수론 #사칙연산</h4>
+        </div>
+ 
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><img src="/img/python-logo.png"><br>Python</li>
+          <li class="tab-link" data-tab="tab-2"><img src="/img/java-logo-1.png"><br>Java</li>
+          <li class="tab-link" data-tab="tab-3"><img src="/img/javascript-logo.png" style="border-radius: 5px;"><br>JavaScript</li>
+          <li class="tab-link" data-tab="tab-4"><img src="/img/dart-logo.png"><br>Dart</li>
+        </ul>
+       
+        <div id="tab-1" class="tab-content current">
+            <script src="https://gist.github.com/Gahee1907/9f94f5c2eefbf445f9f017c92a5d2fca.js"></script>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/b4a5be84de6788dc91ac1ebc098fcdbe.js"></script>
+        </div>
+        
+        <div id="tab-3" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/f596af475b62e717ec79c6b618c8dcb1.js"></script>
+         </div>
+
+         <div id="tab-4" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/1956321c2b154b4aa1b5747b7d204b5e.js"></script>
+         </div>
+
+         <div class="link">
+            <a href="https://www.acmicpc.net/problem/2702" target="_blank"><p>출처: https://www.acmicpc.net/problem/2702</p></a>
+        </div>
+
+        <div class="about">
+            <p>
+            주어지 두 정수를 a, b라 할때, 최소공배수와 최대공약수를 구해야한다.<br>
+            <strong>유클리드 호제법</strong>을 이용하면 두 수의 최대공약수를 구할 수 있다.<br>
+            <br>* 유클리드 호제법이란, 두 자연수 A, B가 있을 때<br>
+            1) <strong>A와 B의 최대공약수는 'A를 B로 나눈 나머지'와 'B'의 최대공약수와 같다.</strong><br>
+            2) A와 B의 최대공약수는 'A를 B로 뺀 값'과 'B'의 최대공약수와 같다.<br>(A와 B가 같아질 때까지 큰 수를 작은 수로 빼며 반복)<br>
+
+            <br>여기서는 1번 방법을 이용해 적은 연산횟수로 빠르게 최대공약수를 구할 수 있었다.<br>
+            최소공배수는 A와 B의 곱셈에서 최대공약수를 나눈 값이 된다.
+            </p>
+        </div>
+       
+      </div>
+
+      <script>
+        $(document).ready(function(){
+   
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+        
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+        
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+        
+        })
+      </script>
+
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3009번 네 번쩨 점 | 가희의 웹 블로그 </title>
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/gitcode.css">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+        
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- js -->
+         <script src="/js/main.js" deger></script>
+    </head>
+</html>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+
+    <!-- header -->
+    <header>
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="/html/algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+    <div class="container">
+        <div class="title">
+            <a href="/html/imple.html"><img src="/img/back.png"></a><h2>3009번 네 번쩨 점</h2>
+            <h4>#구현 #기하학</h4>
+        </div>
+
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><img src="/img/python-logo.png" alt="파이썬 이미지"><br>Python</li>
+          <li class="tab-link" data-tab="tab-2"><img src="/img/java-logo-1.png" alt="자바 이미지"><br>Java</li>
+          <li class="tab-link" data-tab="tab-3"><img src="/img/javascript-logo.png" alt="자바스크립트 이미지" style="border-radius: 5px;"><br>JavaScript</li>
+          <li class="tab-link" data-tab="tab-4"><img src="/img/dart-logo.png" alt="다트 이미지"><br>Dart</li>
+        </ul>
+       
+        <div id="tab-1" class="tab-content current">
+            <script src="https://gist.github.com/Gahee1907/abb405f225fa087306344773b2f12659.js"></script>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/aafd01d11ae4678a0b3d395f1a356e45.js"></script>
+        </div>
+        
+        <div id="tab-3" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/3e14c0b6c11214f3da362a1484e31fb0.js"></script>
+         </div>
+
+         <div id="tab-4" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/46f78654e6032681d187a5fb689596a9.js"></script>
+         </div>
+
+         <div class="link">
+            <a href="https://www.acmicpc.net/problem/3009" target="_blank"><p>출처: https://www.acmicpc.net/problem/3009</p></a>
+        </div>
+
+        <div class="about">
+            <p>
+            <img src="https://gahee1907.github.io/Web_gahee/img/%EB%84%A4%EB%B2%88%EC%A7%B8%EC%A0%90.PNG"><br>
+            (5, 5)와  (5, 7), (7, 5)의 좌표를 통해 평행하는 직각삼각형을 만들기 위해 필요한 나머지 좌표는 (7,7)이 된다.<br>
+            <strong>두개의 숫자가 쌍을 이루는 좌표를 필요로 하고, 두 숫자가 교차되는 좌표</strong>가 필요하다.<br>
+            </p>
+            
+        </div>
+       
+      </div>
+
+      <script>
+        $(document).ready(function(){
+   
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+        
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+        
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+        
+        })
+      </script>
+
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>

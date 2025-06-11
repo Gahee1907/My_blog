@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4673번 셀프 넘버 | 가희의 웹 블로그 </title>
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/gitcode.css">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+        
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- js -->
+         <script src="/js/main.js" deger></script>
+    </head>
+</html>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+
+    <!-- header -->
+    <header>
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="/html/algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <a href="/html/math.html"><img src="/img/back.png"></a><h2>4673번 셀프 넘버</h2>
+            <h4>#수학 #구현 #브루트포스 알고리즘</h4>
+        </div>
+       
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><img src="/img/python-logo.png" alt="파이썬 이미지"><br>Python</li>
+          <li class="tab-link" data-tab="tab-2"><img src="/img/java-logo-1.png" alt="자바 이미지"><br>Java</li>
+          <li class="tab-link" data-tab="tab-3"><img src="/img/javascript-logo.png" alt="자바스크립트 이미지" style="border-radius: 5px;"><br>JavaScript</li>
+          <li class="tab-link" data-tab="tab-4"><img src="/img/dart-logo.png" alt="다트 이미지"><br>Dart</li>
+        </ul>
+       
+        <div id="tab-1" class="tab-content current">
+            <script src="https://gist.github.com/Gahee1907/e9bb1d04a2be6f3bdeb4e781cded2edf.js"></script>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/6a08d4dbf66dfe2652ae55c14fd66ea2.js"></script>
+        </div>
+        
+        <div id="tab-3" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/74927ac72aa5b647799a234718772101.js"></script>
+         </div>
+
+         <div id="tab-4" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/1fd8362b8b2313b8cb19d76894f5b7d0.js"></script>
+         </div>
+
+        <div class="link">
+            <a href="https://www.acmicpc.net/problem/4673" target="_blank"><p>출처: https://www.acmicpc.net/problem/4673</p></a>
+        </div>
+
+        <div class="about">
+            <p>
+                d(75) = 75+7+5 = 87이다.<br>
+                예를 들어, 33으로 시작한다면 다음 수는 33 + 3 + 3 = 39이고, 그 다음 수는 39 + 3 + 9 = 51,<br> 다음 수는 51 + 5 + 1 = 57이다.<br>
+                33은 39의 생성자이고, 39는 51의 생성자, 51은 57의 생성자이다. <strong>생성자가 없는 숫자를 셀프 넘버</strong>라고 한다.<br>
+                <br>각 자리수를 분리해 셀프넘버를 만들어 주고, b에 담아준다.<br>
+                그리고 a에서 셀프 넘버인 b를 빼준 숫자들을 num이라 한다.<br> num을 sorted를 통해 정리해 셀프넘버가 아닌 수들을 나열해 주었다.
+            </p>
+        </div>
+       
+      </div>
+
+      <script>
+        $(document).ready(function(){
+   
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+        
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+        
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+        
+        })
+      </script>
+
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>

@@ -17,7 +17,6 @@ main .title-wrap h1 {
   font-size: 3rem;
   text-align: center;
   margin-top: 30px;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 main .item {
   width: 100%;
@@ -52,13 +51,12 @@ main .item .item-text {
 }
 main .item .item-text h2 {
   font-size: 2.3rem;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
 }
 main .item .item-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   word-break: keep-all;
-  color: white;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+  color: #585858;
 }
 
 @media screen and (max-width: 800px) {
@@ -69,7 +67,7 @@ main .item .item-text p {
     font-size: 1.2rem;
   }
   main .item .item-text p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   main .item .img-wrap {
@@ -82,6 +80,6 @@ main .item .item-text p {
     font-size: 1rem;
   }
   main .item .item-text p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }

@@ -141,7 +141,7 @@ html.open {
 /* visual */
 .visual-wrap {
     padding: 8vw;
-    height: 100vh;
+    height: 82vh;
     background-image: url(https://gahee1907.github.io/Web_gahee/img/welcome.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,12 +149,11 @@ html.open {
 .visual-wrap .text {
     font-size: 5rem;
     font-weight: bolder;
-    margin: 200px 0 40px 0;
+    margin: 80px 0 40px 0;
     word-break: keep-all;
 }
 .visual-wrap p {
     font-size: 1.2rem;
-    font-weight: 200;
     word-break: keep-all;
 }
 .char {
@@ -182,15 +181,13 @@ html.open {
     margin-left: 60px;
 }
 .about-me .about-wrap .about-text h2 {
-  font-family: "League Script", cursive;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #5b7eff;
   margin-bottom: 15px;
 }
 .about-me .about-wrap .about-text p {
     font-size: 1.1rem;
-    font-weight: 300;
     line-height: 30px;
     margin-bottom: 20px;
     word-break: keep-all;
@@ -199,43 +196,14 @@ html.open {
     margin-bottom: 40px;
 }
 .about-me .about-wrap .about-text a {
+    font-size: 1.2rem;
     color:#5b7eff;
     transition: .4s all ease-in-out;
 }
 .about-me .about-wrap .about-text a:hover {
     color:#a1b4f8
 }
-/* skill */
-.flow-wrap {
-    padding: 3vh 8vw;
-}
-.flow-wrap h2 {
-    padding: 3vh 8vw;
-    font-size: 2.2rem;
-}
-.flow-text {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: 0.3s;
-}
-.flow-text .skill {
-    width: 220px;
-    height: 220px;
-    padding: 0 50px;
-}
-.flow-text:hover {
-  color: #000;
-}
-.flow-text:hover .skill {
-  animation-play-state: paused;
-  cursor: pointer;
-}
-.skill {
-  animation: imgLoop 5s linear infinite;
-  padding-right: 2.4881vw;
-}
+
 /* footer */
 footer {
     width: 100%;
@@ -245,8 +213,10 @@ footer p {
     color: #d6d5d5;
     font-size: 1rem;
     text-align: center;
+    padding: 30px 0;
 }
-  @keyframes imgLoop {
+
+@keyframes imgLoop {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -265,7 +235,6 @@ footer p {
     }
     .visual-wrap p {
         font-size: 0.9rem;
-        font-weight: 200;
     }
 }
 @media screen and (max-width: 800px) {

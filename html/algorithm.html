@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가희의 웹 블로그</title>
+    <title>알고리즘 | 가희의 웹 블로그</title>
+
+    <!-- css -->
     <link rel="icon" href="/img/favicon.ico">
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/stlye.css" rel="stylesheet">
@@ -12,10 +14,9 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
 
     <!-- js -->
     <script src="/js/main.js" defer></script>
@@ -28,7 +29,7 @@
             <h1><a href="/index.html">Gahee's Web Portfolio</a> </h1>
         </div>
         <ul class="header-menu">
-            <li><a href="#">Profile</a></li>
+            <li><a href="/html/profile.html">Profile</a></li>
             <li><a href="/html/project.html">Project</a></li>
             <li><a href="/html/note.html">TechNote</a></li>
             <li><a href="javascript:void(0);">Algorithm</a></li>
@@ -39,15 +40,15 @@
             <div onclick="history.back();" class="page_cover"></div>
             <div id="menu">
                 <ul class="nav">
-                    <li><a href="javascript:void(0);">프로필</a></li>
+                    <li><a href="/html/profile.html">프로필</a></li>
                     <li><a href="/html/project.html">프로젝트</a></li>
                     <li><a href="/html/note.html">테크노트</a></li>
                     <li><a href="javascript:void(0);">알고리즘</a>
                         <ul class="sub_mobile">
-                            <li><a href="#">수학</a></li>
-                            <li><a href="#">구현</a></li>
-                            <li><a href="#">다이나믹 프로그래밍</a></li>
-                            <li><a href="#">그래픽</a></li>
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -55,206 +56,36 @@
             </div>
         </div>    
     </header>
-
+    <!-- section -->
+    <section>
+        <div class="background">
+            <h1 class="text">Algorithm</h1>
+        </div> 
+    </section>
+    <!-- main -->
     <main>
-        <article class="imple">
-            <h1>&#11088; Implementation</h1>
-                <div class="swiper backjoon">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
-                            <a href="#"></a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+        <div class="inner">
+            <a href="/html/imple.html">
+                <div id="imple" class="box">
+                    Implementation
                 </div>
-        </article>
-        <article class="math">
-            <h1>&#11088; Mathematics</h1>
-              <div class="swiper backjoon">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
-                            <a href="#"></a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+            </a>
+            <a href="/html/math.html">
+                <div id="math" class="box">
+                    Mathematics
                 </div>
-        </article>
-        <article class="dp">
-            <h1>&#11088; Dynamic Programming</h1>
-            <div class="swiper backjoon">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
-                            <a href="#"></a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+            </a>
+            <a href="/html/dynamic.html">
+                <div id="dynamic" class="box">
+                    Dynamic Programming
                 </div>
-        </article>
-
-        <article class="graph">
-            <h1>&#11088; Graph</h1>
-           <div class="swiper backjoon">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
-                            <a href="#"></a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">백준</a> 
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+            </a>
+            <a href="/html/graph.html">
+                <div id="graph" class="box">
+                    Graph
                 </div>
-        </article>
+            </a>
+        </div>
     </main>
     <footer>
         <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>

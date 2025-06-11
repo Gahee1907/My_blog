@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10837번 동전게임 | 가희의 웹 블로그 </title>
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/gitcode.css">
+        <link href="/css/reset.css" rel="stylesheet">
+        <link href="/css/stlye.css" rel="stylesheet">
+        
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <!-- js -->
+         <script src="/js/main.js" deger></script>
+    </head>
+</html>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+
+    <!-- header -->
+    <header>
+        <div class="header-name">
+            <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="/html/algorithm.html">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+    <div class="container">
+        <div class="title">
+            <a href="/html/math.html"><img src="/img/back.png"></a><h2>10837번 동전게임</h2>
+            <h4>#수학 #애드혹</h4>
+        </div>
+       
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><img src="/img/python-logo.png" alt="파이썬 이미지"><br>Python</li>
+          <li class="tab-link" data-tab="tab-2"><img src="/img/java-logo-1.png" alt="자바 이미지"><br>Java</li>
+          <li class="tab-link" data-tab="tab-3"><img src="/img/javascript-logo.png" alt="자바스크립트 이미지" style="border-radius: 5px;"><br>JavaScript</li>
+          <li class="tab-link" data-tab="tab-4"><img src="/img/dart-logo.png" alt="다트 이미지"><br>Dart</li>
+        </ul>
+       
+        <div id="tab-1" class="tab-content current">
+            <script src="https://gist.github.com/Gahee1907/a466e7f35036abe5eea0bc4cc0ea5d73.js"></script>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/b4c020ac6b221e80f56efafa320126fb.js"></script>
+        </div>
+        
+        <div id="tab-3" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/8b683389de6fe9922251b49896c9410b.js"></script>
+         </div>
+
+         <div id="tab-4" class="tab-content">
+            <script src="https://gist.github.com/Gahee1907/339b30c36a7a305a15d73993cc70c9b5.js"></script>
+         </div>
+
+         <div class="link">
+            <a href="https://www.acmicpc.net/problem/10837" target="_blank"><p>출처: https://www.acmicpc.net/problem/10837</p></a>
+        </div>
+
+        <div class="about">
+            <p>
+                <img src="https://gahee1907.github.io/Web_gahee/img/%EB%8F%99%EC%A0%84.PNG"><br>
+            규칙은 다음과 같다. <br>
+            1. 한 라운드에서 영희와 동수는 한 번씩 동전을 던지고 항상 영희가 먼저 던진다. <br>
+            2. 동전을 던져 앞면이 나오면 1점을 얻고, 뒷면이 나오면 점수를 얻지 못한다. <br>
+            3. 한 명이 남은 기회에 모든 점수를 얻더라도 상대방이 현재까지 얻은 점수보다 작게 되면 게임 도중 어떤 시점에서도 게임은 바로 끝난다. <br>
+            <br>
+            <strong>영희와 동수의 점수가 될 수 없는 두가지 경우가 존재한다.</strong> (이 경우에 '0' 출력)<br>
+            <strong style="text-decoration: underline;">
+                영희의 점수가 동수의 점수보다 작을 때, (라운드 - 영희점수 + 동수점수 + 1)이 동수의 점수보다 작을 경우<br>
+                영희의 점수가 동수의 점수보다 클 때, (라운드 - 영희점수 + 동수점수 +2)가 영희의 점수보다 작을 경우<br>
+            </strong> 
+
+            <br>위 상황의 반대의 경우와 <strong style="text-decoration: underline;">영희와 동수가 동점일 경우</strong>에는 '1'을 출력한다.<br>
+
+            </p>
+        </div>
+       
+      </div>
+
+      <script>
+        $(document).ready(function(){
+   
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+        
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+        
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+        
+        })
+      </script>
+
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>

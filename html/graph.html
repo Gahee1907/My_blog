@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph | 가희의 웹 블로그</title>
+
+    <!-- css -->
+    <link rel="icon" href="/img/favicon.ico">
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/stlye.css" rel="stylesheet">
+    <link href="/css/imple.css" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- js -->
+    <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+    <!-- top button -->
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+
+    <header>
+        <!-- header -->
+        <div class="header-name">
+             <h1><a href="/index.html">Gahee's Web Blog</a> </h1>
+        </div>
+        <ul class="header-menu">
+            <li><a href="/html/profile.html">Profile</a></li>
+            <li><a href="/html/project.html">Project</a></li>
+            <li><a href="/html/note.html">TechNote</a></li>
+            <li><a href="/html/algorithm.html">Algorithm</a></li>
+        </ul>
+        <!-- header-mobile -->
+        <div class="header-mobile">
+            <div class="btn">&#9776;</div>
+            <div onclick="history.back();" class="page_cover"></div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="/html/profile.html">프로필</a></li>
+                    <li><a href="/html/project.html">프로젝트</a></li>
+                    <li><a href="/html/note.html">테크노트</a></li>
+                    <li><a href="javascript:void(0);">알고리즘</a>
+                        <ul class="sub_mobile">
+                            <li><a href="/html/imple.html">구현</a></li>
+                            <li><a href="/html/math.html">수학</a></li>
+                            <li><a href="/html/dynamic.html">다이나믹 프로그래밍</a></li>
+                            <li><a href="/html/graph.html">그래픽</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div onclick="history.back();" class="close">&#8569;</div>
+            </div>
+        </div>    
+    </header>
+    <!-- section -->
+    <section>
+        <div class="background">
+            <h1 class="text">Graph</h1>
+        </div> 
+    </section>
+    <!-- main -->
+    <main>
+        <div class="inner">
+            <ul class="menu">
+                <h1><a href="/html/algorithm.html">Algorithm</a></h1>
+                <li><a href="/html/imple.html">Implementation</a></li>
+                <li><a href="/html/math.html">Mathematics</a></li>
+                <li><a href="/html/dynamic.html">Dynamic.P</a></li>
+                <li><a id="point" href="javascript:void(0);">Graph</a></li>
+            </ul>
+
+            <div class="part">
+                <h2><img src="https://gahee1907.github.io/Web_gahee/img/bronze.png"> Bronze</h2>
+                <div class="level">
+                    <div class="box">
+                        <a href="/algorithm_html/순열 사이클.html">
+                            <img src="/img/baekjoon.png">
+                            <h4>순열 사이클</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/algorithm_html/늑대와 양.html">
+                            <img src="/img/baekjoon.png">
+                            <h4>늑대와 양</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <h2><img src="https://gahee1907.github.io/Web_gahee/img/silver.png"> Silver</h2>
+                <div class="level">
+                    <div class="box">
+                        <a href="/algorithm_html/dfsbfs.html">
+                            <img src="/img/baekjoon.png">
+                            <h4>DFS와 BFS</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/algorithm_html/반복수열.html">
+                            <img src="/img/baekjoon.png">
+                            <h4>반복수열</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/algorithm_html/섬의개수.html">
+                            <img src="/img/baekjoon.png">
+                            <h4>섬의 개수</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@rkgml1907 Developr blog. Powered by GitHub Pages.</p>
+    </footer>
+</body>
+</html>

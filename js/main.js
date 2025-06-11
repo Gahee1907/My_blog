@@ -1,5 +1,4 @@
 
-
  //hambuger menu
  $(document).ready(function() {
     $(".btn").click(function() {
@@ -22,8 +21,7 @@
 })
 
 
-
-//technote
+// 테크노트 페이지 요소 애니메이션
 document.addEventListener("DOMContentLoaded", function () {
   gsap.utils.toArray(".note").forEach((note, index) => {
     gsap.from(note, {
@@ -56,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+//알고리즘 페이지 슬라이드
 const mySwiper = new Swiper('.swiper', {
   slidesPerView: 2,
   slidesPerGroup: 2,
@@ -78,7 +76,7 @@ const mySwiper = new Swiper('.swiper', {
       }
     },
     1001: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       slidesPerGroup: 2,
       grid: {
         rows: 2,
@@ -104,8 +102,10 @@ AOS.init({
   duration: 2000,
 })
 
-
-
+//algorithm top button
+function clickme() {
+  window.scrollTo({top:0, left:0, behavior:"smooth"});
+}
 
 
 

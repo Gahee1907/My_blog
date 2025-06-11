@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {margin:0;padding:0}
 body, button, input, select, table, textarea {font-size:12px;line-height:normal;color:#202020;font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif}
 h1, h2, h3, h4, h5, h6 {font-size:inherit;line-height:inherit}
@@ -15,16 +17,17 @@ i {font-style:normal}
 
 /* 추가*/
 body,html { font-size: 16px;}
+body::-webkit-scrollbar {display: none;}
 
 /* 개인적으로 더 추가 */
 * {
     box-sizing: border-box;
     outline: none;
-    font-family: "42dot Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 body,html { font-size: 16px;}
 body, h1,h2,h3,h4,h5,h6,span, p{
-    font-family: "42dot Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 a {
     text-decoration-line: none;
@@ -38,3 +41,4 @@ a {
     color: rgb(183, 183, 183);
     transition: 0.5s ease;
 }
+
