@@ -96,4 +96,7 @@ main .main-wrap article .text-wrap p {
     main .main-wrap article .about li {
         font-size: 1rem;
     }
+    main .main-wrap article .about .side {
+        margin-left: 0;
+    }
 }
